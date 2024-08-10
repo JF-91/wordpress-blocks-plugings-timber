@@ -1,0 +1,22 @@
+{
+  "name": "starter-theme",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.com/timber/starter-theme.svg?branch=master)](https://travis-ci.com/github/timber/starter-theme) [![Packagist Version](https://img.shields.io/packagist/v/timber/starter-theme?include_prereleases)](https://packagist.org/packages/timber/starter-theme)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "watch": "sass --watch assets/scss/main.scss assets/css/main.css",
+    "start": "wp-scripts start & sass --watch assets/scss/main.scss assets/css/main.css",
+    "build": "wp-scripts build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^28.5.0",
+    "sass": "^1.77.8"
+  }
+}

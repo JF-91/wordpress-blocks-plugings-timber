@@ -1,0 +1,138 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "appearanceTools": true,
+        "color": {
+            "custom": false,
+            "customGradient": false,
+            "defaultPalette": false,
+            "palette": [
+                { "color": "#ffffff", "name": "White", "slug": "white" },
+                { "color": "#000000", "name": "Black", "slug": "black" },
+                { "color": "#0073aa", "name": "Brand Blue", "slug": "brand-blue" },
+                { "color": "#00d084", "name": "Brand Green", "slug": "brand-green" }
+            ]
+        },
+        "typography": {
+            "customFontSize": false,
+            "fontFamilies": [
+                { "fontFamily": "'Open Sans', sans-serif", "name": "Open Sans", "slug": "open-sans" },
+                { "fontFamily": "'Roboto', sans-serif", "name": "Roboto", "slug": "roboto" }
+            ],
+            "fontSizes": [
+                { "name": "Small", "size": "12px", "slug": "small" },
+                { "name": "Normal", "size": "16px", "slug": "normal" },
+                { "name": "Large", "size": "24px", "slug": "large" },
+                { "name": "Huge", "size": "36px", "slug": "huge" }
+            ],
+            "lineHeight": {
+                "small": "1.2",
+                "normal": "1.5",
+                "large": "2.0"
+            },
+            "textTransform": "none",
+            "letterSpacing": {
+                "small": "0.5px",
+                "normal": "0px",
+                "large": "1px"
+            }
+        },
+        "spacing": {
+            "customPadding": true,
+            "units": ["px", "%", "em", "rem"],
+            "blockGap": "20px"
+        },
+        "layout": {
+            "contentSize": "800px",
+            "wideSize": "1200px"
+        },
+        "border": {
+            "customRadius": true,
+            "customColor": false,
+            "customStyle": false,
+            "width": "2px",
+            "radius": "5px"
+        },
+        "blocks": {
+            "core/paragraph": {
+                "typography": {
+                    "fontSize": "16px",
+                    "lineHeight": "1.5"
+                },
+                "color": {
+                    "text": "#333333"
+                }
+            },
+            "core/button": {
+                "color": {
+                    "background": "#0073aa",
+                    "text": "#ffffff"
+                },
+                "typography": {
+                    "fontSize": "14px",
+                    "fontFamily": "'Open Sans', sans-serif"
+                },
+                "border": {
+                    "radius": "3px",
+                    "width": "2px",
+                    "color": "#0073aa"
+                },
+                "spacing": {
+                    "padding": {
+                        "top": "10px",
+                        "bottom": "10px",
+                        "left": "20px",
+                        "right": "20px"
+                    }
+                }
+            }
+        }
+    },
+    "styles": {
+        "color": {
+            "text": "#333333",
+            "link": "#0073aa"
+        },
+        "typography": {
+            "fontSize": "16px",
+            "lineHeight": "1.5",
+            "fontFamily": "'Open Sans', sans-serif",
+            "textTransform": "none",
+            "letterSpacing": "normal"
+        },
+        "spacing": {
+            "padding": "20px",
+            "blockGap": "20px"
+        },
+        "layout": {
+            "contentSize": "800px",
+            "wideSize": "1200px"
+        },
+        "blocks": {
+            "core/button": {
+                "color": {
+                    "background": "#0073aa",
+                    "text": "#ffffff"
+                },
+                "typography": {
+                    "fontSize": "14px",
+                    "fontFamily": "'Open Sans', sans-serif"
+                },
+                "border": {
+                    "radius": "3px",
+                    "width": "2px",
+                    "color": "#0073aa"
+                },
+                "spacing": {
+                    "padding": {
+                        "top": "10px",
+                        "bottom": "10px",
+                        "left": "20px",
+                        "right": "20px"
+                    }
+                }
+            }
+        }
+    }
+}
