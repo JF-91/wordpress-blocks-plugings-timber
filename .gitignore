@@ -1,1 +1,4 @@
 .env
+/var/www/html/wordpress/wp-content/uploads/*
+/var/www/html/wordpress/wp-content/themes/starter-theme/node_modules
+/var/www/html/wordpress/wp-content/themes/starter-theme/
