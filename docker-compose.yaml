@@ -1,0 +1,52 @@
+version: "3.8"
+networks:
+    revolviendo-papeles:
+        driver: bridge
+
+services:
+    mysql:
+        image: mysql:8
+        container_name: revolviendo-papeles-mysql
+        tty: true
+        ports:
+            - "3306:3306"
+        volumes:
+            - "./var/libclea/mysql/:/var/lib/mysql"
+        environment:
+            MYSQL_ROOT_PASSWORD: secret
+            MYSQL_DATABASE: wordpress
+            MYSQL_USER: john
+            MYSQL_PASSWORD: secret
+        networks:
+            - revolviendo-papeles
+
+    server:
+        build: 
+          context: .
+        container_name: revolviendo-papeles-server
+        ports:
+            - "80:80"
+        volumes:
+            - "./var/www/html/:/var/www/html"
+        environment:
+            WORDPRESS_DB_USER: john
+            WORDPRESS_DB_PASSWORD: secret
+            WORDPRESS_DB_NAME: wordpress
+            WORDPRESS_DB_HOST: revolviendo-papeles-mysql
+        depends_on:
+            - mysql
+        networks:
+            - revolviendo-papeles
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: ds-revolviendo-papeles-dbadmin
+        ports:
+            - "8000:80"
+        environment:
+            PMA_HOST: revolviendo-papeles-mysql
+            MYSQL_ROOT_PASSWORD: secret
+        depends_on:
+            - mysql
+        networks:
+            - revolviendo-papeles

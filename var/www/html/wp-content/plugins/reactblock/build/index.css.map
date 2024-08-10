@@ -1,0 +1,1 @@
+{"version":3,"file":"index.css","mappings":";;;AAAA;EACG;AACH,C;;;;ACFA;EACI;EACA;AACJ,C","sources":["webpack://reactblock/./src/editor.scss","webpack://reactblock/./src/index.scss"],"sourcesContent":[".wp-block-react-reactblock {\n   border: 2px solid gray;\n}",".wp-block-react-reactblock {\n    background-color: black;\n    color: #fff;\n}"],"names":[],"sourceRoot":""}

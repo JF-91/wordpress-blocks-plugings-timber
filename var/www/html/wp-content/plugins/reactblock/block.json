@@ -1,0 +1,12 @@
+{
+	"apiVersion": 2,
+	"name": "react/reactblock",
+	"title": "First react Block",
+	"description": "My first react block",
+	"category": "text",
+	"icon": "format-status",
+	"textdomain": "reactblock",
+	"editorScript": "file:./build/index.js",
+	"style": "file:./build/index-rtl.css",
+	"editorStyle": "file:./build/index.css"
+}
